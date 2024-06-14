@@ -1,0 +1,23 @@
+publish the application in Release mode
+
+Create Dockerfile
+
+Create Image
+docker image build -t <image_name> <dockerfile_path>
+
+Dowload mysql:8.4 image
+docker image pull mysql:8.4
+
+Create new volume for application
+docker volume create <volume_name>
+
+Create new network for application
+docker network create --driver <nome_driver> <network_name>
+
+Create and execute data base container 
+docker container run -d --name <container_name> -v <volume_name>:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=<password_user_root> --network <network_name> -e bind-address=0.0.0.0 <image_name>:<image_tag>
+
+create and execute application container
+docker container run -d -e DBHOST=<IPV4Address_data_base_container> --network <network_name> -p <porta_local>:<porta_container> --name <container_name> <image_name>:<image_tag>
+
+Ready, your application is running in the espicificated port.

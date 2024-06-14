@@ -1,0 +1,14 @@
+E:\dev\WebMvcDockerTest\publish\WebMvcDockerTest.exe
+E:\dev\WebMvcDockerTest\publish\appsettings.Development.json
+E:\dev\WebMvcDockerTest\publish\appsettings.json
+E:\dev\WebMvcDockerTest\publish\WebMvcDockerTest.dll
+E:\dev\WebMvcDockerTest\publish\WebMvcDockerTest.runtimeconfig.json
+E:\dev\WebMvcDockerTest\publish\WebMvcDockerTest.pdb
+E:\dev\WebMvcDockerTest\publish\Microsoft.EntityFrameworkCore.dll
+E:\dev\WebMvcDockerTest\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\dev\WebMvcDockerTest\publish\Microsoft.EntityFrameworkCore.Relational.dll
+E:\dev\WebMvcDockerTest\publish\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\dev\WebMvcDockerTest\publish\MySqlConnector.dll
+E:\dev\WebMvcDockerTest\publish\Pomelo.EntityFrameworkCore.MySql.dll
+E:\dev\WebMvcDockerTest\publish\Pomelo.EntityFrameworkCore.MySql.Design.dll
+E:\dev\WebMvcDockerTest\publish\WebMvcDockerTest.deps.json

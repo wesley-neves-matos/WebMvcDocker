@@ -1,0 +1,7 @@
+E:\dev\webmvcdockertest\dist\WebMvcDockerTest.exe
+E:\dev\webmvcdockertest\dist\appsettings.Development.json
+E:\dev\webmvcdockertest\dist\appsettings.json
+E:\dev\webmvcdockertest\dist\WebMvcDockerTest.dll
+E:\dev\webmvcdockertest\dist\WebMvcDockerTest.deps.json
+E:\dev\webmvcdockertest\dist\WebMvcDockerTest.runtimeconfig.json
+E:\dev\webmvcdockertest\dist\WebMvcDockerTest.pdb
