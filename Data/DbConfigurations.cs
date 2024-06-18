@@ -30,11 +30,13 @@ namespace WebMvcDockerTest.Data
         }
         public static void ConfigureDb(this WebApplicationBuilder builder)
         {
-            var host = builder.Configuration["DbServer"] ?? "localhost";
-            var port = builder.Configuration["DbPort"] ?? "3306";
-            var password = builder.Configuration["Dbpassword"] ?? "12345678";
+            var host = builder.Configuration["DBHOST"] ?? "localhost";
+            var port = builder.Configuration["DBPORT"] ?? "3306";
+            var password = builder.Configuration["DBPASSWORD"] ?? "12345678";
 
-            string connectionString = $"server={host};user=root;password={password};port={port};database=produtosdb";
+            string connectionString = $"server={host};user=root;password={password};port={port};database=productsdb";
+
+            System.Console.WriteLine($"String de conexão: {connectionString}");
 
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));

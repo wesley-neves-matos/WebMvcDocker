@@ -26,7 +26,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.DbPopulation();
+//app.DbPopulation();
 
 app.UseRouting();
 

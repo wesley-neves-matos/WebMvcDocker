@@ -1,0 +1,32 @@
+volumes:
+      produtosdata:
+
+networks:
+      backend:
+
+services:
+      mysql:
+            image: "mysql:8.4"
+            volumes:
+                  - produtosdata:/var/lib/mysql
+                  - ./_MySQL_Init_Script:/docker-entrypoint-initdb.d
+            networks:
+                  - backend
+            environment:
+                  - MYSQL_ROOT_PASSWORD=12345678
+                  - bind-address=0.0.0.0
+
+      mvc:
+            build:
+                  context: .
+                  dockerfile: Dockerfile.multi
+            networks:
+                  - backend
+            ports:
+                  - 5000:8080
+            environment:
+                  - DBHOST=mysql
+                  - DBPORT=3306
+                  - DBPASSWORD=12345678
+            depends_on:
+                  - mysql

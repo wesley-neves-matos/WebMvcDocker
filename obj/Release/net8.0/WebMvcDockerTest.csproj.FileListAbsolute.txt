@@ -88,6 +88,7 @@ E:\dev\WebMvcDockerTest\obj\Release\net8.0\WebMvcDockerTest.csproj.CoreCompileIn
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\WebMvcDockerTest.MvcApplicationPartsAssemblyInfo.cache
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\WebMvcDockerTest.RazorAssemblyInfo.cache
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\WebMvcDockerTest.RazorAssemblyInfo.cs
+E:\dev\WebMvcDockerTest\obj\Release\net8.0\WebMvcDockerTest.sourcelink.json
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\staticwebassets.build.json
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\staticwebassets.development.json
 E:\dev\WebMvcDockerTest\obj\Release\net8.0\staticwebassets\msbuild.WebMvcDockerTest.Microsoft.AspNetCore.StaticWebAssets.props

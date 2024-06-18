@@ -1,0 +1,20 @@
+#Estagio 1 - base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+LABEL version="1.0.2" description="Aplicacao ASP .NET Core 8 MVC"
+RUN mkdir /app
+WORKDIR /app
+EXPOSE 8080/tcp
+
+#Estagio 2 - publish
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS publish
+WORKDIR /app
+COPY WebMvcDockerTest.csproj .
+RUN dotnet restore
+COPY . .
+RUN dotnet publish -c release -o dist
+
+#Estagio 3 - dinal
+FROM base AS final
+WORKDIR /dist
+COPY --from=publish /app/dist .
+CMD [ "dotnet","WebMvcDockerTest.dll" ]

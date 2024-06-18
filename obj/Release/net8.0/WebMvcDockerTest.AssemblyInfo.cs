@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebMvcDockerTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3897c2598a3ea843aba7937fde210dc1d619c6b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebMvcDockerTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebMvcDockerTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
